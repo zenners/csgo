@@ -7,5 +7,5 @@ services:
       - "27016:27015/udp"
     volumes:
       - ./.server.cfg:/home/csgo/hlserver/csgo/csgo/cfg/server.cfg
-      - ./deathmatch_autoexec.cfg:/home/csgo/hlserver/csgo/csgo/cfg/autoexec.cfg
-    command: -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_bomb +sv_lan 1
+      - ./competitive_autoexec.cfg:/home/csgo/hlserver/csgo/csgo/cfg/autoexec.cfg
+    command: -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_bomb +sv_lan 0 +sv_setsteamaccount 19FD7DCB8DA0B04649DD1BFA1914AD98 -net_port_try 1
